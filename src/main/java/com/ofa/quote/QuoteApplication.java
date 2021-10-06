@@ -43,9 +43,25 @@ public class QuoteApplication implements CommandLineRunner {
         categoryRepository.save(category2);
         User user = new User();
         userRepository.save(user);
-        Quote quote = new Quote();
-        Quote quote1 = new Quote();
+        Quote quote = new Quote(null, "quote", "author", category,null);
+        Quote quote1 = new Quote(null, "quote1", "author1", category1,null);
+        Quote quote2 = new Quote(null, "quote2", "author2", category2,null);
+        Quote quote3 = new Quote(null, "quote3", "author3", category,null);
+        Quote quote4 = new Quote(null, "quote4", "author4", category1,null);
+        Quote quote5 = new Quote(null, "quote5", "author5", category2,null);
+        Quote quote9 = new Quote(null, "quote6", "author6", category,null);
+        Quote quote6 = new Quote(null, "quote7", "author7", category1,null);
+        Quote quote7 = new Quote(null, "quote8", "author8", category2,null);
+        Quote quote8 = new Quote(null, "quote9", "author9", category,null);
         quoteRepository.save(quote);
         quoteRepository.save(quote1);
+        quoteRepository.save(quote2);
+        quoteRepository.save(quote3);
+        quoteRepository.save(quote4);
+        quoteRepository.save(quote5);
+        quoteRepository.save(quote6);
+        quoteRepository.save(quote7);
+        quoteRepository.save(quote8);
+        quoteRepository.save(quote9);
     }
 }
